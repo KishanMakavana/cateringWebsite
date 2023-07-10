@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Chamunda Cetering</title>
+	<link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="icon" href="Sprites/logo.jpeg">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	
+</head>
+<body id="request-body">
+	<!-- <div id="background">
+    <img id="logo" src="Sprites/bobi-showcase.png">
+    </div> -->
+	<ul class="nav nav-pills justify-content-center">
+			<li class="nav-item">
+					<a class="nav-link" href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+				</li>
+	  <li class="nav-item dropdown">
+	    <a class="nav-link  active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-book"></i> Меню</a>
+	    <div class="dropdown-menu">
+	      <a class="dropdown-item" href="content.html"><i class="fas fa-list-ul"></i> contacts</a>
+	      <a class="dropdown-item active" href="request.html"><i class="fas fa-shopping-basket"></i> Request</a>
+	      <a class="dropdown-item" href="about_us.html"><i class="fas fa-allergies"></i> About Us</a>
+	    </div>
+	  </li>
+	 <li class="nav-item">
+	    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+	  </li>
+
+	  <li class="nav-item">
+	    <a class="nav-link" href="contacts.html"><i id="contact-icon" class="fas fa-mobile-alt"></i> Contect Us</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="for-me.html"><i id="contact-icon" class="fas fa-user-check"></i>Achivements</a>
+		</li>
+	</ul>
+        
+   <div class = "container">
+    <h1>Add Items</h1> 
+      <div class = "sweet">
+        <h2>Sweets</h2>
+        <input type="checkbox" id="gulab_jamoon" name="gulab jamoon" value=15>
+        <label for="gulab_jamoon">Gulab Jamoon</label><br>
+
+        <input type="checkbox" id="dudhi_no_halavo" name="dudhi no halavo" value=15>
+        <label for="dudhi_no_halavo">Dudhi No Halavo</label><br>
+
+        <input type="checkbox" id="topara_paak" name="topara paak" value="10">
+        <label for="topara_paak">Topara Paak</label><br>
+
+        <input type="checkbox" id="kaaju_katri" name="kaaju katri" value="60">
+        <label for="kaaju_katri">Kaaju Katri</label><br>
+
+        <input type="checkbox" id="kaaju_mesup" name="kaaju mesup" value="30">
+        <label for="kaaju_mesup">Kaaju Mesup</label><br>
+
+        <input type="checkbox" id="barafi" name="barafi" value="15">
+        <label for="barafi">Barafi</label><br>
+
+        <input type="checkbox" id="thabadi" name="thabadi" value="30">
+        <label for="thabadi">Thabadi</label><br>
+
+        <input type="checkbox" id="jalebi" name="jalebi" value="10">
+        <label for="jalebi">Jalebi</label><br>
+
+        <input type="checkbox" id="adadiya" name="adadiya" value="20">
+        <label for="adadiya">Adadiya</label><br>
+
+        <input type="checkbox" id="ladava" name="ladava" value="15">
+        <label for="ladava">Ladava</label><br>
+
+        <input type="checkbox" id="penda" name="penda" value="10">
+        <label for="penda">Penda</label><br>
+
+      </div>
+      <div class = "sabji">
+        <h2>Shabji</h2>
+        <input type="checkbox" id="item" name="bateka" value="10" onclick="addCost(15)">
+          <label for="item">Bateka</label><br>
+
+          <input type="checkbox" id="item" name="undhiyu" value="15" onclick="addCost(15)">
+          <label for="item">Undhiyu</label><br>
+
+          <input type="checkbox" id="item" name="bhinda" value="10" onclick="addCost(15)">
+          <label for="item">Bhinda</label><br>
+
+          <input type="checkbox" id="item" name="ringan" value="10" onclick="addCost(15)">
+          <label for="item">Ringan</label><br>
+
+          <input type="checkbox" id="item" name="bhuto" value="15" onclick="addCost(15)">
+          <label for="item">Bhuto</label><br>
+
+          <input type="checkbox" id="item" name="bhaji" value="40" onclick="addCost(15)">
+          <label for="item">Bhaji</label><br>
+
+          <input type="checkbox" id="item" name="suki bhaji" value="10" onclick="addCost(15)">
+          <label for="item">Suki Bhaji</label><br>
+
+          <input type="checkbox" id="item" name="gavaar" value="15" onclick="addCost(15)">
+          <label for="item">Gavaar</label><br>
+
+          <input type="checkbox" id="item" name="shole chana" value="15" onclick="addCost(15)">
+          <label for="item">Shole Chana</label><br>
+
+          <input type="checkbox" id="item" name="vaal" value="15" onclick="addCost(15)">
+          <label for="item">Vaal</label><br>
+
+          <input type="checkbox" id="item" name="mug" value="15" onclick="addCost(15)">
+          <label for="item">Mug</label><br>
+
+          <input type="checkbox" id="item" name="mix kathol" value="20" onclick="addCost(15)">
+          <label for="item">Mix Kathol</label><br>
+
+          <input type="checkbox" id="item" name="choli" value="15" onclick="addCost(15)">
+          <label for="item">Choli</label><br>
+
+          <input type="checkbox" id="item" name="paneer tikka" value="25" onclick="addCost(15)">
+          <label for="item">Paneer Tikka</label><br>
+
+          <input type="checkbox" id="item" name="paneer masala" value="25" onclick="addCost(15)">
+          <label for="item">Paneer Masala</label><br>
+
+          <input type="checkbox" id="item" name="kaaju masala" value="35" onclick="addCost(15)">
+          <label for="item">Kaaju Masala</label><br>
+
+          <input type="checkbox" id="item" name="matar paneer" value="30" onclick="addCost(15)">
+          <label for="item">Matar Paneer</label><br>
+
+          <input type="checkbox" id="item" name="palak paneer" value="30" onclick="addCost(15)">
+          <label for="item">Palak Paneer</label><br>
+
+          <input type="checkbox" id="item" name="saadi daal" value="20" onclick="addCost(15)">
+          <label for="item">Saadi Daal</label><br>
+
+          <input type="checkbox" id="item" name="daal fried" value="35" onclick="addCost(15)">
+          <label for="item">Daal Fried</label><br>
+
+          <input type="checkbox" id="item" name="daal tadka" value="35" onclick="addCost(15)">
+          <label for="item">Daal Tadka</label><br>
+
+          <input type="checkbox" id="item" name="rice" value="25" onclick="addCost(15)">
+          <label for="item">Rice</label><br>
+
+          <input type="checkbox" id="item" name="jeera rice" value="30" onclick="addCost(15)">
+          <label for="item">Jeera Rice</label><br>
+
+              </div>
+              <div class = "roti">
+                <h2>Roti</h2>
+                <input type="checkbox" id="item" name="butter roti" value="20" onclick="addCost(5)">
+                <label for="item">Butter Roti</label><br>
+                
+                <input type="checkbox" id="item" name="plain roti" value="10" onclick="addCost(5)">
+                <label for="item">Plain Roti</label><br>
+                
+                <input type="checkbox" id="item" name="svami roti" value="10" onclick="addCost(5)">
+                <label for="item">Svami Roti</label><br>
+                
+                <input type="checkbox" id="item" name="fulka roti" value="10" onclick="addCost(5)">
+                <label for="item">Fulka Roti</label><br>
+                
+                <input type="checkbox" id="item" name="thepla" value="10" onclick="addCost(5)">
+                <label for="item">Thepla</label><br>
+                
+                <input type="checkbox" id="item" name="rotala" value="10" onclick="addCost(5)">
+                <label for="item">Rotala</label><br>
+                
+                <input type="checkbox" id="item" name="parotha" value="10" onclick="addCost(5)">
+                <label for="item">Parotha</label><br>
+                
+                <input type="checkbox" id="item" name="bhakhari" value="10" onclick="addCost(5)">
+                <label for="item">Bhakhari</label><br>
+                
+                <input type="checkbox" id="item" name="pau" value="15" onclick="addCost(5)">
+                <label for="item">Pau</label><br>
+                
+                <input type="checkbox" id="item" name="bred" value="15" onclick="addCost(5)">
+                <label for="item">Bred</label><br>
+                
+                <input type="checkbox" id="item" name="naan roti" value="20" onclick="addCost(5)">
+                <label for="item">Naan Roti</label><br>
+                
+                <input type="checkbox" id="item" name="puli" value="10" onclick="addCost(5)">
+                <label for="item">Puli</label><br>
+                
+                <input type="checkbox" id="item" name="fanasi puli" value="10" onclick="addCost(5)">
+                <label for="item">Fanasi Puli</label><br>
+                
+                <input type="checkbox" id="item" name="chapdi" value="10" onclick="addCost(5)">
+                <label for="item">Chapdi</label><br>
+        
+      </div>
+      <div class="salad">
+        <h2>Salad</h2>
+        <input type="checkbox" id="item" name="mix veg salad" value="5" onclick="addCost(10)">
+        <label for="item">Mix Veg Salad</label><br>
+
+        <input type="checkbox" id="item" name="mix kathol salad" value="5" onclick="addCost(10)">
+        <label for="item">Mix Kathol Salad</label><br>
+
+        <input type="checkbox" id="item" name="dungli" value="5" onclick="addCost(10)">
+        <label for="item">Dungli</label><br>
+
+        <input type="checkbox" id="item" name="marcha" value="5" onclick="addCost(10)">
+        <label for="item">Marcha</label><br>
+
+        <input type="checkbox" id="item" name="tomato" value="5" onclick="addCost(10)">
+        <label for="item">Tomato</label><br>
+
+
+      </div>
+      <div class = "farsan">
+        <h2>Farasan</h2>
+        <input type="checkbox" id="item" name="bhajiya" value="15" onclick="addCost(15)">
+        <label for="item">Bhajiya</label><br>
+
+        <input type="checkbox" id="item" name="dhokala" value="10" onclick="addCost(15)">
+        <label for="item">Dhokala</label><br>
+
+        <input type="checkbox" id="item" name="khaman" value="10" onclick="addCost(15)">
+        <label for="item">Khaman</label><br>
+
+        <input type="checkbox" id="item" name="dahi vadaa" value="30" onclick="addCost(15)">
+        <label for="item">Dahi Vadaa</label><br>
+
+        <input type="checkbox" id="item" name="ganthiyaa" value="20" onclick="addCost(15)">
+        <label for="item">Ganthiyaa</label><br>
+
+        <input type="checkbox" id="item" name="katles" value="15" onclick="addCost(15)">
+        <label for="item">Katles</label><br>
+
+        <input type="checkbox" id="item" name="sev roll" value="15" onclick="addCost(15)">
+        <label for="item">Sev Roll</label><br>
+
+        <input type="checkbox" id="item" name="papad" value="5" onclick="addCost(15)">
+        <label for="item">Papad</label><br>
+
+        <input type="checkbox" id="item" name="sing papad" value="10" onclick="addCost(15)">
+        <label for="item">Sing Papad</label><br>
+
+        <input type="checkbox" id="item" name="samosa" value="15" onclick="addCost(15)">
+        <label for="item">Samosa</label><br>
+
+        <input type="checkbox" id="item" name="dhosa" value="30" onclick="addCost(15)">
+        <label for="item">Dhosa</label><br>
+
+        <input type="checkbox" id="item" name="paani puri" value="25" onclick="addCost(15)">
+        <label for="item">Paani Puri</label><br>
+
+        <input type="checkbox" id="item" name="daabeli" value="30" onclick="addCost(15)">
+        <label for="item">Daabeli</label><br>
+
+        <input type="checkbox" id="item" name="vadaa pav" value="25" onclick="addCost(15)">
+        <label for="item">Vadaa Pav</label><br>
+                
+
+      </div>
+      <div class = "chainese">
+        <h2>Chainese</h2>
+        <input type="checkbox" id="item" name="manchurian" value="40" onclick="addCost(25)">
+        <label for="item">Manchurian</label><br>
+
+        <input type="checkbox" id="item" name="cheez toss" value="50" onclick="addCost(25)">
+        <label for="item">Cheez Toss</label><br>
+
+        <input type="checkbox" id="item" name="kothmari kali" value="40" onclick="addCost(25)">
+        <label for="item">Kothmari Kali</label><br>
+
+        <input type="checkbox" id="item" name="noodles" value="40" onclick="addCost(25)">
+        <label for="item">Noodles</label><br>
+
+      </div>
+      <div class = "dairy">
+        <h2>Dairy</h2>
+        <input type="checkbox" id="item" name="icecream" value="20" onclick="addCost(10)">
+        <label for="item">Icecream</label><br>
+
+        <input type="checkbox" id="item" name="basundi" value="40" onclick="addCost(10)">
+        <label for="item">Basundi</label><br>
+
+        <input type="checkbox" id="item" name="dahi" value="15" onclick="addCost(10)">
+        <label for="item">Dahi</label><br>
+
+        <input type="checkbox" id="item" name="ras" value="30" onclick="addCost(10)">
+        <label for="item">Ras</label><br>
+
+        <input type="checkbox" id="item" name="chhas" value="15" onclick="addCost(10)">
+        <label for="item">Chhas</label><br>
+
+        <input type="checkbox" id="item" name="shrikhand" value="30" onclick="addCost(10)">
+        <label for="item">Shrikhand</label><br>
+
+        <input type="checkbox" id="item" name="angoor rabadi" value="45" onclick="addCost(10)">
+        <label for="item">Angoor Rabadi</label><br>
+      </div>
+      <button id="but">Check price</button>
+      <div id = "result">
+
+        <!-- <h2>Cost</h2> -->
+      </div>
+   </div>
+        
+	<div class="red-line-bottom">
+		<div class="text-bottom">
+		<div id="stars"><p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+		<p><i class="fas fa-certificate"></i> 100% Pure Food</p>
+			<!-- <p><i class="fas fa-code"></i> Enjoy Your Food - <a class="link" target="_blank" href="https://web.facebook.com/skilldeliver">Владислав Михов</a> и <a class="link" target="_blank" href="https://web.facebook.com/nikola.dionisiev">Никола Дионисиев</a></p> -->
+		<p><i class="fas fa-utensils"></i> Enjoy Your Food &copy;</p>
+		</div>
+	</div>
+	
+	
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
